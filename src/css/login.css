@@ -1,0 +1,151 @@
+.login_page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_box {
+    padding: 5px;
+    background-color: #0b926c;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.login_language_section {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.select_language {
+    display: flex;
+    align-items: center;
+}
+
+.select_language img {
+    margin-right: 10px;
+}
+
+.login_language_section img {
+    width: 20px;
+}
+
+.languages_drop_down {
+    width: 130px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    top: 50px
+}
+
+.languages_drop_down p {
+    color: black;
+}
+
+.languages_drop_down img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.language_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #0b926c;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.logo_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_section img {
+    width: 200px;
+}
+
+.form_section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_input {
+    margin-top: 10px;
+    align-items: center;
+}
+
+.form_section p {
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    padding: 5px;
+}
+
+.form_section input {
+    padding: 10px 5px;
+    width: 50vmin !important;
+    border-radius: 5px;
+    border: none;
+}
+
+.form_section input::placeholder {
+    opacity: 0.6;
+}
+
+.login_content_section {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_input button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 50vmin;
+    font-size: larger;
+    font-weight: 500;
+    color: white;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login_footer {
+    margin-top: 10px;
+}
+
+.login_footer p {
+    font-size: smaller;
+    font-weight: 300;
+}
+
+.d_none {
+    display: none;
+}
+
+svg {
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 600px) {
+    .form_section input {
+        width: 30vmin;
+    }
+}

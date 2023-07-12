@@ -1,0 +1,927 @@
+.main_page {
+    width: 100vw;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 0px 40px;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.side_bar {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 15vw;
+    background-color: white;
+    height: 100vh;
+}
+
+.sidebar_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b926c;
+    width: 15vw;
+}
+
+.sidebar_top img {
+    width: 10vw;
+}
+
+.sidebar_options {
+    margin-top: 2.0vmin;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.sidebar_option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 5px;
+
+}
+
+.option_part {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar_opt {
+    width: 15vw;
+    /* background-color: #0b926c; */
+}
+
+.sidebar_option p {
+    margin-left: 10px;
+    font-size: 1.8vmin;
+    font-weight: 500;
+    color: rgb(69, 69, 69);
+    cursor: pointer;
+}
+
+.sidebar_option svg {
+    /* font-size: larger; */
+    /* font-weight: 500; */
+    width: 1.5vmin;
+    margin-left: 5px;
+    color: #ffc107;
+}
+
+.sidebar_down_icon {
+    color: black !important;
+}
+
+.sidebar_opt_below {
+    cursor: pointer;
+    padding: 5px 2px;
+    padding-left: 25px;
+}
+
+.sidebar_opt_below p {
+    font-size: 1.5vmin;
+    font-weight: 500;
+    color: rgb(106, 106, 106)
+}
+
+.sub_sidebar_option {
+    display: flex;
+    padding: 5px 0px;
+}
+
+.sub_sidebar_option p {
+    padding: 0px 0px 0px 5px;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: rgb(226, 223, 223);
+}
+
+/* tabs */
+.selected_tab {
+    width: 70vw;
+}
+
+.profile_tab h2 {
+    font-size: 2.2vmin;
+    font-weight: 500;
+}
+
+.profile_card {
+    background-color: #ffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 76vw;
+    margin-top: 20px;
+}
+
+.profile_card_form {
+    padding-left: 5vmin;
+    margin-top: 40px;
+}
+
+.profile_info_combo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile_info_combo p {
+    font-weight: 700;
+    font-size: 1.5vmin;
+    color: rgb(32, 32, 32);
+}
+
+.profile_info_combo input {
+    width: 20vw;
+    padding: 1.8vmin;
+    margin-left: 10px;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8vmin;
+    color: rgb(64, 62, 62);
+}
+
+/*  Navbar */
+.navbar {
+    background-color: white;
+    border-radius: 1.5vmin;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vmin;
+    padding: 2.5vmin 2.5vmin;
+}
+
+.navbar_first_part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.nav_combo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vmin;
+    color: rgb(151, 147, 147);
+    /* width: 150px; */
+}
+
+.nav_combo svg {
+    margin-right: 1.1vmin;
+    font-size: 3.5vmin;
+    display: flex;
+    align-items: center;
+}
+
+.nav_combo img {
+    height: 3.5vmin;
+    width: 3.5vmin;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nav_second_part {
+    justify-content: space-between;
+    display: flex;
+    width: 40%;
+}
+
+
+
+/* floating line */
+.floating_line {
+    background-color: #ffc107;
+    width: 80vw;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 63vw;
+    }
+}
+
+.floating_line p {
+    position: relative;
+    animation: mymove 15s infinite;
+    font-weight: 500;
+    font-size: 1.6vmin;
+    color: rgb(80, 77, 77);
+}
+
+/* Tabs Part*/
+.tabs_part {
+    display: flex;
+    justify-content: flex-start;
+    padding: 3vmin;
+    flex-direction: column;
+}
+
+.selected_tab_part {
+    margin-top: 3vmin;
+}
+
+/*  change password */
+.password_change_card {
+    margin-top: 20px;
+    background-color: white;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.section_input button {
+    width: 20vw;
+}
+
+.r_color {
+    color: red !important;
+    font-size: medium;
+}
+
+.editable_input input {
+    background-color: white !important;
+    border: 1px solid rgb(217, 215, 215);
+}
+
+.section_input {
+    align-self: flex-end;
+}
+
+.password_tab h2 {
+    font-size: 3.5vmin;
+    font-weight: 500;
+}
+
+.section_input button:hover {
+    background-color: #f4e5b9;
+    color: black;
+}
+
+/*add agent tab*/
+
+.form_part {
+    display: flex;
+}
+
+.add_agent {
+    width: 75vw;
+}
+
+.add_agent_tab {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    background-color: white;
+    overflow-y: scroll;
+    margin-top: 3vmin;
+    padding: 3vmin;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.add_agent_tab::-webkit-scrollbar {
+    display: none;
+}
+
+.add_agent_tab input {
+    width: 20vw;
+    background-color: white;
+    border: 1px solid #9ba09b;
+}
+
+/* .profile_basic_info{
+    margin-top: 40px;
+} */
+.add_form h3 {
+    height: 20px;
+    margin-top: 20px;
+    font-size: 2.5vmin;
+}
+
+.positions_input {
+    width: 20vw;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #9ba09b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.positions_input button {
+    width: 50%;
+    padding: 1.9vmin;
+    font-size: 1.5vmin;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.selected_pos_btn {
+    background-color: #0b926c !important;
+    color: white !important;
+}
+
+.css-b62m3t-container {
+    border-radius: 5px;
+    width: 20vw !important;
+    margin-left: 5px;
+}
+
+/* dashboard */
+.dashboard_tab {
+    width: 40vw;
+    max-height: 70vh;
+}
+
+.dashboard_banners img {
+    width: 40vw;
+}
+
+.info_box {
+    width: 40vw;
+    height: 80px;
+    margin-top: 5px;
+}
+
+.info_box_top {
+    padding: 0px 20px;
+    background-color: #e2ded1;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info_box_bottom {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+
+.downline_info {
+    height: 150px;
+}
+
+.downline_top {
+    height: 33%;
+}
+
+.downline_combo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.member_search_tab {
+    width: 70vw;
+}
+
+.member_search_bar {
+    height: 10vmin;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 3vmin;
+}
+
+.member_search_bar p {
+    font-weight: 600;
+    font-size: 2.2vmin;
+}
+
+.member_search_bar input {
+    padding: 2vmin;
+    width: 30%;
+    margin: 0px 5vmin;
+    font-size: 1.7vmin;
+}
+
+.member_search_bar button {
+    width: 10vw;
+    height: 6vmin;
+    background-color: #ffc107;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5vmin;
+    font-size: 1.7vmin;
+    color: white;
+}
+
+.account_name p {
+    padding: 20px;
+    color: #aa8a2c;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.search_results {
+    width: 70vw;
+    margin-top: 1vmin;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.search_results table {
+    width: 70vw;
+    border: 1px solid rgb(163, 159, 159);
+}
+
+.search_results table th {
+    border: 1px rgb(201, 36, 36);
+    align-content: center;
+    padding: 5px 0px;
+    background-color: #0b926c;
+    color: white;
+}
+
+.search_results table td {
+    border: 1px solid rgb(212, 207, 207);
+    align-content: center;
+    padding: 5px 2px;
+    background-color: #ffffff;
+    color: black;
+}
+
+.not_available {
+    text-align: center;
+    width: 100%;
+    background-color: #aa8a2c;
+}
+
+.selected_tab h2 {
+    font-size: 3.5vmin;
+    font-weight: 500;
+}
+
+/* add sub account*/
+.sub_account_card {
+    width: 75vw;
+    max-height: 72vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3vmin;
+    margin-top: 3vmin;
+}
+
+.sub_account_parent_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub_account_parent_div h3 {
+    margin-top: 4vmin;
+    font-size: 3vmin;
+}
+
+.sub_account_div_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.sub_account_div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75vw;
+}
+
+.sub_account_div input[type='text'],
+.sub_account_div input[type='password'],
+.sub_account_div input[type='number'] {
+    background-color: white;
+    border: 1px solid rgb(169, 167, 167);
+    width: 20vw;
+}
+
+.sub_acc_permission {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sub_account_perm_div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.permission_combo {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.permission_combo div {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+/* .permission_combo div input{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    background-color: #0b926c;
+} */
+
+.permission_combo label {
+    padding: 0px 2vmin;
+    font-weight: 700;
+    font-size: 1.4vmin;
+}
+
+.permission_combo p {
+    font-weight: 600;
+    font-size: 1.5vmin;
+}
+
+.permission_combo div input {
+    margin-right: 6px;
+}
+
+.sub_account_perm_div input[type='radio']:after {
+    width: 2vmin !important;
+    height: 2vmin !important;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #d1d3d1;
+    cursor: pointer;
+}
+
+.sub_account_perm_div input[type='radio']:checked:after {
+    width: 2vmin;
+    height: 2vmin;
+    border-radius: 2vmin;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #0b926c;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #d1d3d1;
+}
+
+@media screen and (max-width: 600px) {
+    .main_page {
+        padding: 0px;
+    }
+
+    /* .navbar{
+        width: 80w;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    } */
+    .side_bar,
+    .sidebar_opt,
+    .sidebar_options,
+    .sidebar_top {
+        width: 20vw;
+    }
+
+    /* sub account */
+    .sub_account_div {
+        flex-direction: column;
+    }
+
+    .sub_account_parent_div {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .sub_account_div_part {
+        align-items: flex-start;
+    }
+}
+
+/* report section */
+.report_tab {
+    display: flex;
+    flex-direction: column;
+}
+
+.report_filter_section {
+    background-color: white;
+    width: 100%;
+    padding: 3vmin;
+    margin-top: 3vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: space-evenly; */
+}
+
+.filter_section_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.filter_section_div .profile_info_combo p {
+    margin-right: 10px;
+}
+
+.filter_section_div .profile_info_combo input {
+    background-color: white;
+    font-size: 1.5vmin;
+    border: 1px solid rgb(169, 167, 167);
+    margin-left: 10px;
+}
+
+.filter_section_div .css-b62m3t-container {
+    border-radius: 5px;
+    width: 10vw !important;
+    margin-left: 5px;
+}
+
+.filter_section_below {
+    justify-content: flex-start;
+}
+
+.selected_options_radios {
+    display: flex;
+    justify-content: center;
+}
+
+.selected_options_radios .profile_info_combo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+.selected_options_radios .profile_info_combo p {
+    padding: 0px;
+    margin: 0px 0px 0px 1.0vmin;
+    font-size: 1.3vmin;
+    font-weight: 400;
+}
+
+.selected_options_radios .profile_info_combo input {
+    padding: 0px;
+    margin: 0px;
+    width: 2vmin;
+    height: 2vmin;
+}
+
+.search_btn button {
+    background-color: #ffc107;
+    width: 8vw;
+    height: 5vmin;
+    padding: 1vmin;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5vmin;
+    border-radius: 1.5vmin;
+    cursor: pointer;
+    margin-left: 2vmin;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    width: 2.5vmin;
+    height: 2.5vmin;
+}
+
+.error p {
+    font-size: 1.3vmin;
+    padding-left: 10px;
+    color: #9ba09b;
+    margin-top: 2px;
+}
+
+.error_input {
+    display: flex;
+    flex-direction: column;
+}
+
+/* products */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products_tab {
+    width: 35vw;
+}
+
+.my_products {
+    padding: 2vmin;
+    margin-top: 2vmin;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.products_categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_category {
+    border: 1px solid rgb(156, 156, 156);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product_category_active {
+    background-color: #0b926c;
+}
+
+.product_category_active p {
+    color: white !important;
+
+}
+
+.product_category p {
+    font-size: 2.0vmin;
+    font-weight: 600;
+    color: rgb(141, 139, 139);
+}
+
+.products_list {
+    padding: 20px 0px;
+    max-height: 65vh;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+.products_list_a {
+    max-height: 50vh;
+    padding: 20px 0px 5px 0px;
+}
+
+.product_list_combo {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.product_list_combo input {
+    width: 20px;
+}
+
+.products_list_a input {
+    font-size: 1.8vmin;
+    font-weight: 600;
+    /* padding: 5px 0px;
+    margin: 5px 0px; */
+}
+
+.products_list_inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_list_product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product_list_product p {
+    font-size: 1.8vmin;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+.m_b_5 {
+    font-size: 2vmin !important;
+    margin-bottom: 10px;
+    font-weight: 700 !important;
+}
+
+/* Deposit section */
+.account_credit {
+    margin-top: 3vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.account_credit h3,
+.account_credit p {
+    font-size: 3vmin;
+    font-weight: 700;
+}
+
+.account_credit p {
+    color: blue;
+}
+
+.d_f {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.overflow_n {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.search_results table tbody button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vmin 2vmin;
+    cursor: pointer;
+    font-size: 1.5vmin;
+    background-color: #0b926c;
+    color: white;
+    border-radius: 4px;
+    border: none;
+}
+
+/* popup container */
+
+.popup_btns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.popup_container button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: #ffc107;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup_container p {
+    font-size: 2.5vmin;
+    font-weight: 700;
+}
+
+.popup_container input {
+    width: 20vw;
+    padding: 5px 10px;
+}
+
+.b_red {
+    background-color: red !important;
+}
